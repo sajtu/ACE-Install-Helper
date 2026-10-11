@@ -67,7 +67,7 @@ CHECK
         if ! ask 'Reinstall/repair dependencies, model files, and launcher?'; then
             if ask 'Start the existing ACE installation now?'; then
                 if bash "$INSTALL_DIR/start-ace.sh"; then
-                    printf '\nACE session ended.\n'
+                    printf '\n'
                 else
                     printf '\nACE did not start or its session ended with an error. The existing installation was not changed.\n' >&2
                 fi
